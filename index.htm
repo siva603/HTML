@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        html{
+            background-color: rgb(180, 168, 168);
+            scroll-behavior:smooth;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <div>
+        <h1> BASICS</h1>
+
+        <a 
+            href="#down_side" 
+            target="_blank"
+            title="go to down side"
+            > down side PAGE </a>
+        <ul>
+            <li>How website works ?</li>
+            <li>HTML Document Structure</li>
+            <li>HTML Headings</li>
+            <li>HTML Paragraphs</li>
+            <li>HTML Comments</li>
+            <li>Text Formatting in HTML </li>
+            <li>Links and Anchors</li>
+            <li>Images in HTML </li>
+            <li>Void Elements in HTML</li>
+            <li>Lists in HTML</li>
+            <li>Tables in HTML </li>
+        </ul>
+    </div>
+
+    <div>
+        <p>
+            ------------------------------------------------------------------------------------------------------------------------------
+            <h1>HTML</h1>
+            <pre>HYPER TEXT MARKUP LANGUAGE<br><br>
+            Hyper text is text which contains links to other texts and it is also called hyper links.<br>
+            Markup Language, it is a way to give instructions to a computer about how content should be organized and displayed.
+        
+
+            Note : No matter how much whitespace you use inside HTML element content (which can include one or more space characters.
+            But also line breaks), the HTML reduces each sequence of whitespace to a single space when rendering(running the html page) the code.
+        </pre>
+
+        </p><br><br>
+
+        <p>
+            <h1>HISTORY OF HTML</h1>
+            <pre>
+                Early beginnings (1980s) : 
+                the concept of hypertext was proposed by computer scientist Ted Nelson in the 1960s.
+                In the 1980s, <strong>Tim Berners-Lee</strong>, a British computer scientist, introduced the world wide web (WWW)
+                and developed the first HTML.
+
+                HTML 2.0(1995)
+                HTML 3.2 (1997) AND HTML 4.0 (1997-1999) 
+                HTML 4 introduced significant improvements, including better support for forms, script, and style sheets. 
+                It was a crucial step toward modern web development.
+
+                HTML 5(2014) : HTML 5 was a major milestone, with a focus on multimedia, improved semantics, and better supoort for we applications.
+                It introduced new elements like video,audio, and picture. 
+                HTML 5 made web development more versatile and capable.
+            </pre>
+
+        </p>
+------------------------------------------------------------------------------------------------------------------------------
+        <pre>
+            <h2>HTML DOCUMENTS / STRUCTURE</h2>
+            &lt;!DOCTYPE html&gt;         --> Let the browser know it's an HTML 5. Appear once, at the top of the page
+
+            &lt;html&gt;                  --> Root of an HTML Document
+
+            &lt;head&gt;                  --> contains the information about the HTML document
+
+            &lt;title&gt; Home page  &lt; /title&gt; --> Title for the HTML page
+
+            &lt;/head &gt;
+
+            &lt;body&gt; &gt;                   ----> Contains everything you want to do on the web page
+                
+                &lt;h1&gt; This is Head tag &lt;\h1&gt;  --> Define a large heading
+            &lt; /body &gt;
+            &lt; /html &gt;
+
+
+
+            &lt;html  lang = "en"&gt; 
+
+            The lang attribute specifies the Language of the elements content like en,hi,ko etc.
+
+            Attribute are used along with the HTML tags to define the characteristics of the element.
+
+            Attribute provide additional information about elements
+
+        </pre>
+
+        ------------------------------------------------------------------------------------------------------------------------------
+
+        <h1>HTML Headings and Text</h1>
+        <pre>
+           
+            <h2>HTML Heading ( h1 to h6) Elements : </h2>
+            h1 : Typically, larger and bold, around 24px to 36 px or even larger.
+
+            h2 : Slightly smaller, around 18px to 30px.
+ 
+            h3 : Smaller than h2, around 16px to 24px.
+
+            h4 : Generally, around 14px to 20px.
+
+            h5 : Smaller, often around 12px to 18px.
+
+            h6 : The smallest, often around 10px to 16px.
+
+            Note : 
+                1.The tag's element name is case-insensitive.
+                
+                2. A single h1 tag is typically used per page.
+
+                3.Follow the hierarchy from h1 to h6 consistently.
+
+            Interview Questions :
+
+                1. How many levels of headings are available in HTML ?.
+
+                2. What is the default font size for HTML headings ?.
+
+                3. What happens if you skip heading levels, such as going from &lt;h1&gt; to &lt;h3&gt; ?.
+
+                    Ans : Skipping heading levels can confuse both users and search engines. 
+                          It's best to maintain a proper hierarchical structure for better accessibility and SEO.
+
+                4. How many &lt;h1&gt; can be used on a single page ? 
+
+                    Ans : Traditional Approach --> use only one &lt;h1&gt; tag for the main title or heading of the entire page.
+
+            <h2>HTML Paragraph (&lt; p &gt;) Element : </h2>
+
+                Note : 
+                        * The &lt;p&gt; tag defines a paragraph.
+
+                        * Browsers automatically add a single blank line before and after each &lt;p&gt; element.
+
+
+                Interview Qes :
+                                1. How do you create a paragraph using the &lt;p&gt; tag ?
+
+                                2. Can you nest other HTML elements inside a &lt;p&gt; tag ?
+
+                                    Ans : No, the &lt;p&gt; tag is a block-level element and it can't contain block-level 
+                                    elements like other Paragraphs or headings. However, you can include inline elements
+                                    like &lt;strong&gt;, &lt;em&gt;, and links.
+                                    
+            <h2>&lt;!-- Comment Here --&gt;</h2>
+                Note :
+                        To comment out in HTML, insert information between  &lt;!-- and  --&gt; tags (browsers won't show these notes).
+
+                        Commenting int HTML allows developers to leave notes about their code its functionality or to indicate necessary changes for the future.
+
+                Example :
+
+                            &lt;!-- Hello, this is comment text --&gt;
+
+
+            <h2>HTML Text Formatting</h2>
+ 
+                -->   HTML Formatting involves enhancing the visual presentation of text. It enables text 
+                      manipulation for improved aesthetics, eliminating the need for CSS, various formatting tags
+                      within HTML facilite techniques such as bold, italics and underline, enhancing the text's 
+                      visual prominence and emphasis.
+
+                Note :
+                        1. Bold and Italic : 
+
+                            &lt;strong&gt; : Represents strong importance. Text inside this tag is typically displayed in bold.
+
+                                Example : <strong>This is demo text</strong>
+
+                            &lt;em&gt;    :  Represents emphasized text. Text inside this tag is usually displayed in italics.
+                              
+                                Example : <em>This is demo text</em>
+
+                            
+                        2. Underline and Strikethrough : 
+
+                            &lt;u&gt; : Represents underlined text.
+
+                                Example : <u>This is demo text</u>
+
+                            &lt;s&gt; : Represents strike through text (Crossed out).
+
+                                Example : <strike>This is demo text</strike>
+
+                        3. Subscript and SuperScript :  
+
+                            &lt;sub&gt;  : Represents subscript text (lower and smaller)
+
+                                Example : the water 👍 formula H<sub>2</sub>O 
+
+                            &lt;sup&gt; : Represents superscript text(upper and smaller)
+
+                                Example : formula of theory of relativity -->   e = mc<sup>2</sup>
+
+                        4. Preformatted Text :   
+
+                            &lt;pre&gt; : Represents preformatted text, preserving spaces and line breaks.
+
+                            &lt;kbd&gt;  : this tag represents keyboard input, indicating that the enclosed content should be treated 
+                                as something a user would type on a keyboard. It is often used to show examples of keyboard commands or shortcuts.
+
+                                Example : To save a file, press <kbd>Ctrl</kbd> + <kbd>S</kbd> 
+
+                            &lt;abbr&gt; : This tag stands for <strong>abbreviation</strong> and is mark up abbreviations or acronyms in your content.
+
+                                Example : put curser on this ----> <abbr title="World Health Organization"> WHO </abbr> is an international organization.
+
+                        5. Text Highlighting :  
+                        
+                            &lt;mark&gt;   : This tag is used to highlight or mark a portion of text to draw attention to it.
+                            It typically results in a yellow background color behind the marked text, making it stand out visually.
+
+                                Example : <mark> This is demo for mark tag</mark>
+
+                            &lt;small&gt;  : This tag is used to indicate that the enclosed text should be displayed in a smaller font size. 
+                            It's often used for fine print, legal disclaimers, or less important information.
+
+                                Example : <small> This is demo for small tag</small>
+
+                            &lt;del&gt; :  Used to highlight something that has been deleted from the document.
+
+                                Note : &lt;strike&gt; tag specifies text that is no longer correct, accurate or relevant.
+                                &lt;del&gt; tag is used to identify text that has been deleted from a document,
+                                but retained to show the history of modifications made to the document.
+
+                                Example : <del>This is demo for del tag</del>
+
+                        6.Inline Style :   Inline style is one of the way to style HTML content.
+                        
+                            Example :  &lt;p style = " color = red" &gt; this is paragraph  &lt;/p&gt;
+------------------------------------------------------------------------------------------------------------------------------ 
+
+        <h2>HTML TIPS</h2>
+
+            --> While using nested tag in one elements never mismatched the tags.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+        <h2>HTML Anchor Tag</h2>
+            
+        The &lt;a&gt; tag defines a hyperline, which is used to link from one page to another.
+
+            Example : &lt;a  herf="https:// tt.com"&gt; visit  &lt;/a&gt;
+
+        <h3>HTML Attribute </h3>
+
+        href : specifies the URL or destination the link points to.
+
+        target : Specifies where the linked content will be displayed (e.g.. _blank for a new window / tab)
+
+        download : Suggests that the target will be downloaded when clicked.
+
+        rel : Describes the relationship between the current page and the linked page.
+
+        title : Provides additional information whe hovering over the link. 
+
+        id : Assigns a unique identifier to the anchor for linking within page.
+
+        class : Assigns a class for styling or JavaScript interact. 
+
+        Style : Applies inline CSS styling to the anchor. 
+
+        tabindex : Specifies the tab order when navigating using the  keyboard. 
+
+        accesskey : Defines a keyboard shortcut to activate the link. 
+
+        aria : Attributes for  accessibility purposes (e.g., arial-lab)
+
+            Example : 
+            <a 
+            href="#" 
+            target="_blank"
+            title="go to up side"
+            id="1"
+            class="10th"> HOME PAGE </a>
+
+        <h3>Interview Questions</h3>
+
+        1. How can you create a link within the same webpage that takes the user to a specific section or element on the page ?
+            
+            Ans :  To create a link within the same webpage that takes the user to a specific section or element on the same,
+            webpage you can user the anchor(a) tag's href attribute along with the id attribute of the target element.
+
+        2. What's the difference between relative and absolute URLs in the href attribute ?
+
+            Ans : Relative URLs are URLs that are relative to the current page's URL.
+            Absolute URLs are complete URLs, including the protocol (http/https)
+
+        3. How does the download attribute work in the anchor tag?
+
+            Ans : The download attribute suggests that the linked resource should be downloaded instead of navigated to, prompting the user to download the file.
+
+        4. How do you create an HTML link that opens the user's default email client with a specific email address?
+
+            Ans : <a href="mailto:siva@morzilla.org">Send email to siva</a>
+
+        5. How can you create a clickable link in HTML that allows user directly initiate a phone call when clicked ?
+
+            Ans : To create a link that enables users to initiate a phone call when clicked, you can use the anchor tag's href attribute with the tel: protocal.
+
+                Example : <a href="tel:+2323433"> Call Us</a>
+        
+        6. When to user quotes, when not to ?
+
+            Ans :   <a href=http://.com>this is correct</a>
+
+                    <a href=http://.com title=the Mozilla homepage>this is not correct</a> --> this is not correct
+
+                    So the best practice is always include the attribute quotes. It avoids such problems, and results in more readable code. 
+
+        7. When use single or double   quotes ?
+
+            Ans : <a href="https://www.example.come">this is example</a>
+                  <a href='https://www.example.come'>this is example</a>
+
+                  mixing both quotes are same time is wrong.
+                  However, if you use one type of quote, you can include other type of quote inside your attribute values:
+
+------------------------------------------------------------------------------------------------------------------------------
+
+<h2>HTML Entities</h2>
+
+            NOTE : HTML entities are codes used to represent special characters and symbols that have reserved meanings in HTML.
+            These entities are especially important when you want to display characters  that might conflict with HTML syntax or
+            when you want to display characters that aren't directly available on your keyboard. HTML entities are represented using an ampersand (&)
+            followed by a code and a semicolon (;).
+
+
+
+            &lt; : less than sign (<)
+
+            &gt; : greater than sign (>)
+
+            &amp; : ampersand sign (&)
+
+            &quot; : Double quotation mark ("")
+
+            &apos; : Single quotation mark or apostrophe('')
+
+            &nbsp; : Non -breaking space( )
+
+            &dollar; : Doller sing ($)
+
+            &copy; : Copyright symbol (©)
+
+            &reg; Registered trademark symbol ()
+
+            &trade; Trademark symbol ()
+
+            &hearts; : Heart symbol ()
+
+            <H3>INTERVIEW QUESTIONS : HTML ENTITIES </H3>
+
+            1. When might you use the & nbsp ; entity ?
+
+                The &nbsp entity is used to insert a non-breaking space, which prevents the browser from collapsing consecutive spaces into among them
+
+            2. How would you display a trademark symbol using an HTML ?
+
+                You can display a trademark symbol using the &trade entity 
+
+            3. WHy is it important to use HTML entities for special ?
+
+                Using HTML entities ensures proper rendering of characters symbols and helps avoid conflicts with HTML syntax.
+
+            4. Represent the dollar sing symbol using different HTML.
+
+                We can represent the dollar sing symbol using 3 different in HTML entity methods. website ( htmlquick.com )
+
+                    1. Using named Entity : &dollar ;
+
+                    2. Using Hexadecimal Numeric Reference : #x00024 ;
+
+                    3.Using Decimal Numeric Reference : &#36 ;
+
+            <h2>HTML Empty Elements </h2>
+
+    Empty or void elements are HTML elements that don't require a closing tag because they contain no content.
+    They are self-contained, independently complete, and don't rely on other elements to function.
+
+    Not all parts of a web page use the usual pattern of having an opening tag, some content, and then a closing tag.
+    Some parts only need a single tag to work. These are called "void elements" or "Empty elements".
+
+            &lt;area&gt; : Defines a clickable area within an image map. 
+
+            &lt;br&gt; : Represents a line break.
+
+            &lt;col&gt; :Specifies column properties for a table column group.
+
+            &lt;embed&gt; : Embeds external content or plugin content.
+
+            &lt;hr&gt; : Represents a thematic break or horizontal rule.
+
+            &lt;img&gt; : Embeds an image.
+
+            &lt;input&gt; : Represents an input field.
+
+            &lt;link&gt; : Specifies relationships between a current document and external resources.
+
+            &lt;meta&gt; : Provides metadata about the HTML document.
+
+            &lt;param&gt; : Defines parameters for plugins.
+
+            &lt;source&gt; : Specifies multiple media resource for media elements like video.
+
+            &lt;track&gt; : Specifies text tracks for media elements.
+
+            &lt;wbr&gt; : Represents a word break opportunity in text.
+            
+
+<h2>HTML Picture Tag</h2>
+    
+    The &lt;picture&gt; HTML element contains zero or more &lt;source&gt; elements and one
+    &lt;img&gt; element to offer alternative version of an image for different display/device scenarios.
+
+
+    The &lt;picture&gt; element in HMTL is used to provide multiple sources of an image, allowing the browser to choose the most appropriate source based on the user's device,
+    screen size, and other factors. This is particularly useful for response design and ensuring the best quality images are displayed.
+    <picture>
+        <source srcset="/attitude.webp" type="image/webp"> 
+        <source srcset="/attitude.jpg" type="image/jpg"> 
+        <source srcset="/attitude.jpeg" type="image/jpeg"> 
+        <source srcset="/attitude.svg" type="image/svg"> 
+       
+
+        <img src="./light.jpg"
+        alt="this is demo picture tag"
+        width="50%">
+    </picture>
+
+
+
+<h2>HTML Figure Tag</h2>
+
+    The &lt;figure&gt; HTML element represents self-contained content, potentially with an optional caption, which is specified using the &lt;figcaption&gt; element.
+        
+    <figure>
+
+            <img src="./attitude.jpg" alt="this is demo for figure tag"
+            width="50%">
+
+            <figcaption> This is figcaption text</figcaption>
+    </figure>
+
+
+
+<h2>HTML Lists</h2>
+
+    <h3>Ordered List</h3>
+        
+        An ordered list is used to create a list of items in a specific order, typically indicated by numbers.
+        <ol>
+            <li> First item</li>
+            <li> Second item</li>
+            <li> Third item</li>
+        </ol>
+
+    <h3>Unordered List</h3>
+
+        An unordered list is used to create a list of items that are not in any particular order.
+        Each list item is marked with a bullet point.
+
+       ----> list-style-type : disc or circle or square or none or imge etc...
+        <ul>
+            <li> Apple </li>
+            <li> Orange</li>
+            <li> Banana </li>
+        </ul>
+    
+    <h3>INTERVIEW QUESTIONS</h3>    
+
+        1. What is the significance of the type attribute in ordered lists?
+
+            * Decimal number (type = "1") : this is the default style. It uses regular decimal numbers.
+
+            * Uppercase Letters (type = "A") : It uses uppercase letters (A,B,C) as list item numbers.
+
+            * Lowercase Letters (type = "a") : It uses lowercase letters (a,b,c) as list item numbers.
+
+            * Uppercase Roman Numbers (type = "I") : It uses uppercase Roman numerals ( I, II, III) as list item numbers.
+            
+            * Lowercase Roman Numbers (type = "i") : It uses lowercase Roman numerals ( i, ii, iii) as list item numbers.
+
+        2. What is the use of the start attribute in ordered lists ?
+
+            This is attribute is used we can start an list number as our wish.
+        
+                like 3,4,5 ....
+
+3. Explain the concept of nested lists ?
+           <ul>
+                <li> Fruit 
+                    <ol>
+                        <li> Banana </li>
+                        <li> Apple 
+                            <ul>
+                                <li> Green </li>
+                                <li> Red </li>
+                            </ul>
+                        </li>
+                        <li> Pears </li>
+                    </ol>
+                </li>
+                <li> Vegitables </li>
+                <li> Meat </li>
+            </ul>
+
+4. How do you create a horizontal navigation menu using an unordered list ?
+
+<ul style="list-style-type: none; display: flex; gap: 10px; background-color: aqua;">
+    <li> Home </li>
+    <li> About </li>
+    <li> Service </li>
+    <li> Contact </li>
+
+
+</ul>
+</pre>
+    </div>
+
+<div>    <h1 id="down_side">ADVANCED</h1>
+    <ul style="list-style: none;">
+        <li>HTML Map & Area Elements</li>
+        <li><a href="./table.html">HTML Table</a></li>
+        <li><a href="./iframe.html">HTML IFRAME</a></li>
+        <li><a href="./image.html">HTML Picture tag & HTML Figure tag</a></li>
+        <li><a href="./audio.html">HTML Audio tag</a></li>
+        <li><a href="./video.html">HTML Video tag</a></li>
+        <li><a href="./form.html">Forms and input Elements</a></li>
+        <li><a href="./semantic.html">HTML Semantic Elements</a></li>
+        <li><h2><a href="./project.html">HTML Project 1</a></h2></li>
+        <li><h2><a href="./project/index.html">HTML Final Project</a></h2></li>
+
+        <li><details>
+            <summary>HTML Meta tags</summary>
+            <pre>
+                <h2>HTML Meta Tags</h2>
+    
+                <h3>Meta tags for metadata : </h3> Meta tags are HTML elements that provide metadata about a webpage. They are placed within the &lt;head&gt; section 
+                of an HTML document and are nto visible to users but are used by browsers, search engines, and other web services to gather information about the page 
+    
+                
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    
+                    Sets the viewport properties for responsive design.
+    
+    
+                &lt;meta charset="UTF-8"&gt; : Specifies the character encoding for the webpage, ensuring proper rendering of characters.
+    
+                &lt;meta name="description" content="A brief description of the webpage"&gt; : Provides a concise description of the page's content.
+    
+                &lt;meta name="keywords" content="keyword1,keyword2,keyword3"&gt; : Specifies relevant keywords for search engines (not as impactful as it used to be).
+    
+                &lt;meta name="author" content="Author's name"&gt; : Indicates the author of the webpage.
+
+                &lt;meta name="robots" content="index, follow"&gt; : Indicates Search engine robots whether to index and follow links on the page.
+
+                
+    
+            </pre>
+        </details></li>
+
+        <li>
+            <details>
+                <summary>HTML SEO</summary>
+                <pre>
+                    High-Quality Content : Create valuable and relevant content that addresses user's needs.
+
+                    Keyword Research : Use relevant keywords naturally within your content.
+
+                    Descriptive Title : Use descriptive and relevant title for your pages. (title tag)
+
+                    Heading tags : Use appropriate heading tags ( h1, h2, etc...) to structure content.
+
+                    Image alt text : Provide descriptive alt text for images.
+
+                    Internal Links : Use to reputable external sources when relevant.
+
+                    External Links : Link to reputable external sources when relevant.
+
+                    Mobile-Friendly Design : Ensure your website is responsive and mobile-friendly. 
+
+                    Site speed : Optimize your website's loading speed for better user experience.
+
+                </pre>
+            </details>
+        </li>
+        <li>Website Ranking Score</li>
+        <li>Host Website Live For Free and Paid</li>
+    </ul></div>
+
+    <div>
+        <h1>PRO LEVEL</h1>
+        <ul>
+            <li>40+ Interview Questions</li>
+            <li>30+ Tips and tricks</li>
+            <li>Notes + List of Deprecated tags</li>
+            <li>50+ Animated Slides</li>
+     
+        </ul>
+    </div>
+
+    <pre>
+        <h2> Extra  Information : </h2>
+        </h2>
+
+        <h3>details tag</h3>
+        <details>
+            <summary>Code with siva</summary>
+            <p>This  is a text inside details tag.</p>
+        </details>
+        
+        <h3>bdo element</h3>
+        This is some Text in bdo element.
+        <bdo dir=rtl>This is some Text in bdo RTL element.</bdo><br/><br/>
+
+        <h3>abbr element</h3>
+        The abbreviation for HTML is represented by the abbr tag, which stands for HyperText Markup Language.<br/>
+        The abbreviation for HTML stands for HyperText Markup Language, which is the standard markup language used to create web pages. It was developed
+        The abbreviation for HTML is represented by the abbr element.<br/>
+        <abbr title="HyperText Markup Language">HTML</abbr>.<br/><br/>
+
+        <h3>cite element</h3>
+        The cite element represents a work that is quoted, referenced, or otherwise used in an essay, speech, publication, presentation, or
+        The cite element represents a work that is quoted or referenced, such as a book, publication, or web page. It can also be
+        The cite element represents a work that is quoted or referenced, such as a book, publication, or web page. It can also be
+        According to the cite attribute, the cite element represents a reference to an external source that describes the context or meaning of the content of
+        According to the cite attribute.
+
+        <h3>samp element</h3>
+        A sample of program code.
+        <samp>This is a sample of program code.</samp><br/>
+
+        <h3>kbd element</h3>
+        Keyboard input.
+        <kbd>CTRL + C</kbd>&nbsp;&nbsp;
+        <kbd>CTRL + V</kbd><br/><br/>
+
+        <h3>code element</h3>
+        A piece of computer code.
+        <code>&lt;!DOCTYPE html&gt;</code><br/><br/>
+
+        
+    </pre>
+</body>
+</html>

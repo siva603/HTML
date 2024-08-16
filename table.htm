@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        #demo >table{
+        
+            margin: 20px;
+            padding: 5px;
+            text-align: center;
+            border-collapse:collapse;
+            margin: 0px;
+        }
+       #demo > th,tr,td{
+            border: 3px solid rgb(11, 247, 106);
+            padding: 2px;
+        }
+
+        #time  > table {
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        #time > th,tr,td{
+
+            border: 3px solid rgb(247, 168, 11);
+            padding: 10px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h2>HTML Table Tag</h2>
+<pre>
+    
+    HTML tables allow web developers to arrange data into rows and columns. We must write everything inside the table tag.
+
+    &lt;table&gt; : Defines an HTML table, which is used to organize data into rows and columns.
+
+    &lt;tbody&gt; : Groups the main content (data rows) of an HTML table. 
+
+    &lt;thead&gt; : Groups the header content (table heading ) of an HTML table. 
+
+    &lt;th&gt; : Defines a header cell (table heading) within a table. 
+
+    &lt;td&gt; : Represents a data cell within an HTML table. 
+
+    &lt;tr&gt; : Defines a row within an HTML table. 
+
+
+    <h2 style="margin: 0px;padding: 0px;">this is demo</h2>
+    <div id="demo">
+        <table>
+            <thead>
+                <tr>
+                    <th>SNO</th>
+                    <th>NAME</th>
+                    <th>MARKS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Siva</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ravi</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Hemanth</td>
+                    <td>90</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 style="padding: 0px;">This is time table</h2>
+    <p style="padding: 0px;">using this attribute &lt;th rowspan="3" or colspan="5" &gt;</p>
+    <div id="time" style="padding: 0px;">
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="6"  style="padding: 10px;">TIME TABLE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="6">Hours</td>
+                    <td>MON</td>
+                    <td>TUE</td>
+                    <td>WED</td>
+                    <td>THUR</td>
+                    <td>FRI</td>
+                    <td>SAT</td>
+                </tr>
+                <tr>
+                    <td>math</td>
+                    <td>math</td>
+                    <td>math</td>
+                    <td>math</td>
+                    <td>math</td>
+                    <td>math</td>
+                </tr>
+                <tr>
+                    <td>math</td>
+                    <td>math</td>
+                    <td>math</td>
+                    <td>math</td>
+                    <td>math</td>
+                    <td>math</td>
+                </tr>
+                <tr>
+                    <td colspan="6">Lunch</td>
+                </tr>
+                <tr>
+                    <td>math</td>
+                    <td>math</td>
+                    <td>math</td>
+                    <td>math</td>
+                    <td>math</td>
+                    <td>math</td>
+                </tr>
+                <tr>
+                    <td>math</td>
+                    <td>math</td>
+                    <td>math</td>
+                    <td>math</td>
+                    <td>math</td>
+                    <td>math</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <h3>INTERVIEW QUESTIONS</h3>
+
+        1. What is the purpose of the &lt;thead&gt;, &lt;tbody&gt;, and &lt;tfoot&gt; elements within a table ?
+        
+        2. How can you create table headers using  the &lt;th&gt; element ? How is it different using &lt;td&gt; for data cells?
+
+        3. What is the significance of the colspan and rowspan attributes in table provide an example.
+</pre>
+
+</body>
+</html>

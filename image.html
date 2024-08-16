@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image</title>
+    <style>
+
+        img{
+            max-width: 1000px;
+            box-shadow:rgb(239, 69, 7);
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2> HTML Image Tag </h2>
+
+        The &lt;img&gt; tag is used to embed(ADD) an image in an HTML page.
+
+            src --> Specifies the path to the image.
+
+            alt --> Specifies an alternate text for the image. If the image for some reason cannot be displayed.
+
+            loading = lazy --> image loaded when curser comes to near to image.
+
+            Deprecated attributes of HTML Images --> align, border, hspace, vspace.
+            <br><br>
+
+            <img alt="attitude image of uchiha obito"
+            src="./attitude.jpg"
+                width="100%"
+                height="auto"
+                title="uchiha obito"
+                loading="lazy"
+                />
+
+            <br><br>
+
+            <h2>MAP AND AREA TAGS ARE USED IN IMAGES</h2>
+            <br><br>
+
+            <img
+            src="./dance.jpg"
+            alt="obito dance photo"
+            usemap="#map"
+            width="550"
+            height="auto"
+            />
+
+            <map name="map">
+                <area
+                shape="circle"
+                coords="100,100,250,150"
+                href="#"
+                alt="dance"
+                />
+            </map>
+            <br><br>
+
+            <h2>src set and sizes in images/h2>
+
+            <br><br>
+
+            <img 
+            src="./light.jpg"
+            alt="status of obito uchiha"
+            srcset="./dance.jpg   400w
+            ./attitude.jpg  600w"
+            
+            
+            sizes="(max-width : 600px) 400px,
+                 (max-width : 800px) 600px"
+            />
+
+        <pre>
+            <h3>INTERVIEW QUESTIONS</h3> 
+
+1. How would you make an image responsive using the attribute ?
+
+    You can set the width attribute to a percentage value (e.g, width="100%") to make the image adjust its width based on the available space.
+g
+2. How do you create an image link using the &lt;img&gt; tag?
+
+    You wrap the &lt;img&gt; tag with an anchor &lt;a&gt; tag and provide the href attribute in the &lt;a&gt; tag.
+
+3. What's the difference between relative and absolute in the href attribute ?
+
+    Relative URLs are URLs that are relative to the current page's URL. Absolute URLs are complete URLs, including the protocol (http/ https ) and domain.
+
+4. Why is providing descriptive alt text for images important? 
+
+    It improves accessibility for users with visual impairments and helps search understand image content.
+        </pre>
+
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <H2>HTML FORMS TAG</H2>
+
+
+    <pre>
+
+        
+    The &lt;form&gt; tag is used to create an HTML form for user input. 
+
+    The &lt;input&gt; HTML element is used to create interactive controls for web-based forms to accept data from the user. 
+    We must write inside the tag.
+        
+    <form action="">
+
+        <div >
+            1. Text input : allows users to enter a single line of text.
+            
+            <label for="username" style="display: inline-block;">USER NAME :</label>
+            <input type="text" id="username" style="display:inline-block;" >
+        </div>
+
+        <div>
+            2. Password input : Hides the entered text for secure password entry.
+
+            <label for="password">USER PASSWORD : </label>
+            <input type="password" id="password">
+        </div>
+
+        <div>
+            3. Email input : validates and formats input as an email address. 
+
+            <label for="email"> USER EMAIL : </label>
+            <input 
+            type="text" 
+            id="email" 
+            placeholder="enter your email"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            autocomplete="off"
+            value="siva@email.com"
+            size="20"
+            readonly
+            disabled
+            >
+        </div>
+
+        <div>
+           4. Number input : Accepts numeric input and provides increment/decrement controls.
+
+            <label for="number">  Number : </label>
+            <input type="number" id="number">
+
+            <label for="number2"> Positive Number : </label>
+            <input type="number" id="number2" min="1" max="100">
+
+            <label for="number3"> Negative Number : </label>
+            <input type="number" id="number3" max="-1">
+
+            <label for="number4">  Max subjects : </label>
+            <input type="number" id="number4" max="4" min="1" value="1">
+
+            <label for="number5"> Mobile  Number : </label>
+            <input type="number" id="number5" min="1" max="9999999999"   value="1">
+        </div>
+
+        <div>
+            5. Radio Buttons : Allows users to choose a single option from a group of options.
+
+                note : name  attribute is used to group radio buttons together.
+
+            <label for="gender"> Gender : </label>
+            <input type="radio" name="gender" id="male" value="male"> Male 
+            <input type="radio" name="gender" id="female" value="female"> Female
+            
+        </div>
+        <div>
+            6.Checkboxes : Allows users to select multiple options.
+
+            <label for="hobbies"> Fav Hobbies : </label>
+
+            <input type="checkbox" name="hobbies" value="music"> Music
+            <input type="checkbox" name="hobbies" value="videos"> Videos
+            <input type="checkbox" name="hobbies" value="games"> Games
+        </div>
+        <div>
+            7. Dropdowns : Provides a list of options for choose from.
+
+            <label for="country"> Fav Country : </label>
+            <select name="country" id="country">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+            </select>
+        </div>
+
+        <div>
+            8.&lt;datalist&gt; provide a predefined list of options for autocomplete suggestions.
+             Note : difference between  datalist and select is that, user can manually enter anything in datalist but not possible in select tag.
+
+            <label for="country"> Select a Country :   </label>
+            <input type="text" name="country" id="country" list="countries">
+            <datalist id="countries">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+            </datalist>
+        </div>
+
+        <div>
+            9. Textarea : Allows users to enter multiple lines of text.
+
+            <label for="Textarea"> Message :   </label>
+            <textarea name="" id="textarea cols="30" rows="10"></textarea>
+
+        </div>
+
+        <div>
+            10. File upload : Lets users choose and upload files from their device.
+
+            <label for="fileupload">Upload file:</label>
+            <input type="file" id="fileupload" name="fileupload"><br><br>
+
+        </div>
+
+        <div>
+            11.Submit Button : Submits the form data to backend.
+
+            <label for="submitbtn">Submit Form :  </label>
+            <input type="submit" value="Submit"/><br><br>
+
+        </div>
+
+    </form>
+
+
+    <h2>INTERVIEW QUESTIONS</h2>
+
+        1. difference between Id vs Class attribute ?. 
+
+            Multiple elements in HTML can have the same class value, whereas a id attribute must be unique.
+
+        2. Difference between Div and Span Tag ?. 
+
+            Div is block level element and Span is a inline element.
+    </pre>
+
+    <h2>ADVANCED FORM INPUTS  </h2>
+    <pre>
+        <form action="#">
+
+            <div>
+            Range input : Allows users to select a value from a specified range using a slider.
+
+                <label for="range">Range : </label>
+                <input type="range" name="volume" id="range" min="0" max="100" value="25">
+            </div>
+
+            <div>
+                Date Input : Provides a data picker for selecting dates.
+
+                <label for="birthday">Birthday : </label>
+                <input type="date" name="birthday" id="birthday">
+            </div>
+
+            <div>
+                Time input : Allows users to input a specific time.
+
+                <label for="appointment">appointment time : </label>
+                <input type="time" name="appointment" id="appointment">
+            </div>
+
+            <div>
+                Color Input : Presents a color picker for selecting colors.
+
+                <label for="favoritecolor">Favorite Color : </label>
+                <input type="color" name="favoritecolor" id="color">
+            </div>
+
+            <div>
+                URL input : validates and formats input as a URL.
+
+                <label for="website">Website : </label>
+                <input type="url" name="Website" placeholder="Enter website url">
+            </div>
+
+            <div>
+                Search input : Provides a search input field with a clear button. 
+
+                <label for="searchQuery">SearchQuery : </label>
+                <input type="search" name="searchQuery" placeholder="Search...">
+            </div>
+
+            <div>
+                Month input : Allows users to select a month add year 
+
+                <label for="month">Month and year : </label>
+                <input type="month" name="month" id="monthid">
+            </div>
+
+            <div>
+                Week input : Allows users to select a specific week.
+
+                <label for="week">Week :   </label>
+                <input type="week" name="week" id="weekid">
+            </div>
+        </form>
+    </pre>
+
+    <h2>Semantic HTML5 Form Elements</h2>
+    <pre>
+        Semantic HTML5 elements like &lt;label&gt;, &lt;fieldset&gt;, and &lt;legend&gt; provide better structure and accessibility to forms.
+
+        &lt;label&gt; : Associates text labels with form elements for better user understanding.
+
+        &lt;fieldset&gt; : Groups related form elements together, creating a visual and semantic grouping.
+
+        &lt;legend&gt; : Provides a caption or title for the &lt;fieldset&gt; element.
+
+
+        <form action="/submit" method="post">
+
+            <fieldset>
+                
+                <legend>This is personal info</legend>
+
+                <div>             
+                    <label for="username">USER NAME :  </label>
+                    <input type="text" id="username" >
+                </div>
+        
+                <div>
+                    <label for="password">USER PASSWORD : </label>
+                    <input type="password" id="password">
+                </div>
+
+            </fieldset>
+        </form>
+        
+    </pre>
+
+</body>
+</html>
